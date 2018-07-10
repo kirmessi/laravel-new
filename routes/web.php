@@ -20,6 +20,9 @@ Route::post('/send','mailController@send');
 Route::get('/email','mailController@email');
 Route::get('/sendmail','mail2Controller@index');
 
+Route::get('form','FormController@index')->name('form');
+Route::post('form','FormController@store');
+Route::get('/users','Pagination@users');
 Route::get('/about', 'testController@about')->middleware('test:Kir');
    //1. with
    //2. withBitfumes

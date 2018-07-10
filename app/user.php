@@ -21,4 +21,15 @@ class user extends Model
    public function roles() {
    	return $this->belongsToMany(role::class);
    }
+
+   public function test() 
+   {
+
+      return $this->hasMany('App\Test')->paginate(2);
+   }
+
+
 }
+
+
+

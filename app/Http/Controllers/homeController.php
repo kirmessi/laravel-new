@@ -8,6 +8,7 @@ use App\role;
 use App\post;
 
 
+
 class homeController extends Controller
 {
        public function index()
@@ -18,9 +19,9 @@ class homeController extends Controller
     	$user_role = role::find(2)->users;
     	$mobiles = user::find(1)->mobile;
     	$user = user::find(1);
-    	return $post->tags;
+    //	return $post->tags;
 
-    	//return view('welcome',compact('user','mobiles','post'));
+    	return view('welcome',compact('user','mobiles','post'));
 //
     	}
 }

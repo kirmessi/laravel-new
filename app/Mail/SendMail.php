@@ -31,7 +31,7 @@ class SendMail extends Mailable
     public function build(request $request)
     {
        // $user = user::find(1);
-        return $this->view('mail',['msg'=>$request->message])->to($request->to);
-       // return $this->view('mail',['name'=>$user->name])->to($user->email);
+      return $this->view('mail',['msg'=>$request->message])->to($request->to);
+     //  return $this->view('mail',['name'=>'Kir'])->to('kirmessi2394@gmail.com')->from('support@laravel.com');
     }
 }

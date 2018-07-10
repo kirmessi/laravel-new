@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Mail;
+//use App\Mail\newMail;
 use App\Mail\SendMail;
 
 class mailController extends Controller
@@ -16,7 +17,8 @@ class mailController extends Controller
     		$message->from('kirmessi2394@gmail.com', 'Kir');
     	});*/
 
-		Mail::send(new sendMail());
+		Mail::send(new SendMail());
+		//Mail::send(new newdMail());
 
     }
 
